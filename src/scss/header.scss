@@ -1,0 +1,18 @@
+.header {
+    display: flex;
+    align-items: center;
+    background: var(--light-gray);
+    border-radius: var(--border-radius);
+    padding: 12px 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.header__logo {
+    margin-right: 40px;
+}
+
+.header nav ul {
+    display: flex;
+    gap: 10px;
+}

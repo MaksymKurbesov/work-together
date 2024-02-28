@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img class="header__logo" src="./logo.svg" width="50" />
+        <nav>
+          <ul>
+            <li><a href="#">Преимущества</a></li>
+            <li><a href="#">Вакансии</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Связаться</a></li>
+          </ul>
+        </nav>
+        <button class="leave-request-button">Оставить заявку</button>
+      </header>
+    </div>
+    <main>
+      <div class="container">
+        <section class="hero">
+          <div>
+            <h1>
+              Возьмите будущее в свои руки: откройте для себя работу мечты
+            </h1>
+            <p class="hero__subtitle">
+              Открытые вакансии ждут вас: Ваш следующий вызов начинается здесь
+            </p>
+            <button class="hero__more-button">Подробнее</button>
+            <a class="find-work-button" href="./vacancies">Найти работу</a>
+          </div>
+          <div>
+            <div class="hero__image-wrapper">
+              <img class="hero__image" src="./hero-image.png" width="100%" />
+              <button>
+                О компании <img src="./icons/arrow.svg" width="15" />
+              </button>
+              <p>
+                <span>100K+</span>
+                удовлетворенных <br />
+                клиентов
+              </p>
+            </div>
+            <ul class="hero__statistic">
+              <li>
+                <h2>1000+</h2>
+                <p>Количество вакансий</p>
+              </li>
+              <li>
+                <h2>5+</h2>
+                <p>Лет на рынке</p>
+              </li>
+              <li>
+                <h2>40+</h2>
+                <p>Стран для работы</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="work-for-you">
+          <h2>Мы работаем для вас, а не для рынка</h2>
+          <ul>
+            <li>
+              <h3>Инновации и технологии</h3>
+              <p>
+                Инвестиции в исследования и разработку составили 10 миллионов
+                долларов за последний год
+              </p>
+            </li>
+            <li>
+              <p>
+                Компания сертифицирована по международным стандартам ISO 9001
+              </p>
+            </li>
+            <li>
+              <h3>Отзывы и рекомендации</h3>
+              <p>
+                Более 5000 подробных кейсов с положительными отзывами от наших
+                клиентов
+              </p>
+            </li>
+            <li>
+              <h3>Клиентская база и партнерства</h3>
+              <p>Обслуживание более 2500 активных клиентов</p>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <section class="with-us">
+        <div class="container">
+          <div class="cards-wrapper">
+            <div class="with-us-card">
+              <div class="with-us-card__header">
+                <ul class="tags-list">
+                  <li>Долго</li>
+                  <li>Дорого</li>
+                  <li>Сложно</li>
+                </ul>
+                <h2>Без нас</h2>
+              </div>
+              <ul class="features-list">
+                <li>
+                  <img src="./icons/quiz.svg" />
+                  <div>
+                    <h3>Ограниченный доступ к вакансиям</h3>
+                    <p>
+                      Пропуск эксклюзивных предложений о работе, которые
+                      доступны только через нашу платформу.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <img src="./icons/sad-circle.svg" />
+                  <div>
+                    <h3>Отсутствие персонализации</h3>
+                    <p>
+                      Поиск работы в одиночку без индивидуальных рекомендаций и
+                      поддержки может быть менее эффективным и более стрессовым.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <img src="./icons/time-quarter past.svg" />
+                  <div>
+                    <h3>Затраты времени</h3>
+                    <p>
+                      Необходимость самостоятельно фильтровать множество
+                      вакансий может отнимать ценное время, которое могло бы
+                      быть использовано для развития навыков или отдыха.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <img src="./icons/chat-silent.svg" />
+                  <div>
+                    <h3>Сложность в налаживании контактов</h3>
+                    <p>
+                      Без доступа к профессиональным сетям и мероприятиям может
+                      быть труднее налаживать ценные связи в индустрии.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="with-us-card">
+              <div class="with-us-card__header">
+                <ul class="tags-list">
+                  <li>Быстро</li>
+                  <li>Дешёво</li>
+                  <li>Просто</li>
+                </ul>
+                <h2>С нами</h2>
+              </div>
+              <ul class="features-list">
+                <li>
+                  <img src="./icons/best-vacancy.svg" />
+                  <div>
+                    <h3>Подборка лучших вакансий</h3>
+                    <p>
+                      Получите доступ к эксклюзивным вакансиям от ведущих
+                      работодателей, которые недоступны на общедоступных
+                      платформах.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <img src="./icons/experts.svg" />
+                  <div>
+                    <h3>Доступ к экспертным ресурсам</h3>
+                    <p>
+                      Получение актуальной информации и аналитики от ведущих
+                      экспертов отрасли.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <img src="./icons/unique-tools.svg" />
+                  <div>
+                    <h3>Уникальные инструменты саморазвития</h3>
+                    <p>
+                      Возможность использовать специализированные инструменты и
+                      приложения для личностного роста и самосовершенствования.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <img src="./icons/donate.svg" />
+                  <div>
+                    <h3>Приоритетное обслуживание</h3>
+                    <p>
+                      Персональный менеджер или приоритетное обслуживание в
+                      рамках услуг компании.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <button class="find-work-button with-us__button">
+            Начать с нами
+          </button>
+        </div>
+      </section>
+      <div class="container">
+        <section class="vacancy">
+          <h2>Вакансии</h2>
+          <p class="vacancy-subtitle">Найдите работу, которая вдохновляет</p>
+          <ul class="vacancy-list" z>
+            <li>
+              <div class="vacancy-info">
+                <h3>Сборщик</h3>
+                <!--                <p>-->
+                <!--                  Погрузитесь в мир гибкости и свободы, исследуя город и-->
+                <!--                  встречая новых людей каждый день.-->
+                <!--                </p>-->
+                <button>
+                  Подробнее <img src="./icons/arrow.svg" width="15" />
+                </button>
+              </div>
+            </li>
+            <li>
+              <div class="vacancy-info">
+                <h3>Официант</h3>
+                <!--                <p>-->
+                <!--                  Откройте для себя мир, где каждый день предлагает новую-->
+                <!--                  загадку под капотом.-->
+                <!--                </p>-->
+                <button>
+                  Подробнее <img src="./icons/arrow.svg" width="15" />
+                </button>
+              </div>
+            </li>
+            <li>
+              <div class="vacancy-info">
+                <h3>Строитель</h3>
+                <!--                <p>-->
+                <!--                  Станьте создателем новых пространств и преобразуйте ландшафт-->
+                <!--                  вокруг себя.-->
+                <!--                </p>-->
+                <button>
+                  Подробнее <img src="./icons/arrow.svg" width="15" />
+                </button>
+              </div>
+            </li>
+            <li>
+              <div class="vacancy-info">
+                <h3>Повар</h3>
+                <!--                <p>-->
+                <!--                  Сотворите нечто вечное, сочетая красоту и функциональность в-->
+                <!--                  каждом проекте.-->
+                <!--                </p>-->
+                <button>
+                  Подробнее <img src="./icons/arrow.svg" width="15" />
+                </button>
+              </div>
+            </li>
+          </ul>
+          <button class="all-vacancy">Все вакансии</button>
+        </section>
+        <section class="faq">
+          <div class="faq-title">
+            Вопросы и
+            <div>
+              <img
+                class="decorate-image"
+                src="./decorate1.png"
+                height="50"
+                width="150"
+              /><span>Ответы</span>
+            </div>
+          </div>
+          <ul class="faq-list">
+            <li>
+              <span>001</span>
+              <h3>Как начать работу с вашей компанией?</h3>
+              <p class="collapse">
+                Для начала сотрудничества с нашей компанией мы предлагаем вам
+                связаться с одним из наших менеджеров. Это позволит нам лучше
+                понять ваши потребности и обсудить, как мы можем быть вам
+                полезны. Мы ценим ваш интерес к нашей компании и стремимся
+                обеспечить индивидуальный подход к каждому клиенту.
+              </p>
+              <img src="./icons/arrow.svg" />
+            </li>
+            <!--            <li>-->
+            <!--              <span>002</span>-->
+            <!--              <h3>Сколько стоит ваша услуга для соискателей?</h3>-->
+            <!--              <p class="collapse">-->
+            <!--                Наши услуги для соискателей абсолютно бесплатны. Мы получаем-->
+            <!--                комиссию от работодателей за успешное размещение кандидатов.-->
+            <!--              </p>-->
+            <!--              <img src="./icons/arrow.svg" />-->
+            <!--            </li>-->
+            <li>
+              <span>002</span>
+              <h3>Как быстро я могу найти работу через вашу компанию?</h3>
+              <p class="collapse">
+                Скорость нахождения работы зависит от множества факторов,
+                включая ваш опыт, навыки, отрасль и текущий спрос на рынке
+                труда. Мы стремимся максимально эффективно соответствовать вашим
+                квалификациям и предпочтениям с доступными вакансиями.
+              </p>
+              <img src="./icons/arrow.svg" />
+            </li>
+            <li>
+              <span>003</span>
+              <h3>Какие отрасли мы покрываем?</h3>
+              <p class="collapse">
+                Мы работаем с широким спектром отраслей, включая IT,
+                строительство, медицину, образование, продажи и многое другое.
+                Наша цель — помочь вам найти работу или кандидатов, которые
+                идеально соответствуют вашим потребностям.
+              </p>
+              <img src="./icons/arrow.svg" />
+            </li>
+            <li>
+              <span>004</span>
+              <h3>Как обеспечивается конфиденциальность моих данных?</h3>
+              <p class="collapse">
+                Мы придаем большое значение конфиденциальности и безопасности
+                данных. Ваша личная информация и данные о компании используются
+                исключительно в рамках процесса поиска работы или подбора
+                персонала и не раскрываются третьим лицам без вашего согласия.
+              </p>
+              <img src="./icons/arrow.svg" />
+            </li>
+          </ul>
+        </section>
+        <section class="join-community">
+          <h2>Присоединяйтесь к нашему сообществу</h2>
+          <p class="join-community__subtitle">
+            В мире, где возможности растут с каждым днем, ключ к успеху — в
+            соединении с правильными людьми и ресурсами. Наше сообщество
+            предлагает не просто вакансии, а путь к развитию, обучению и
+            настоящему успеху в вашей карьере.
+          </p>
+          <div class="inputs-wrapper">
+            <input type="text" placeholder="Ваше имя" />
+            <input type="text" placeholder="Ваш телефон" />
+            <button>
+              Присоединиться <img src="./icons/heart.svg" width="20" />
+            </button>
+          </div>
+          <div class="users">
+            <img src="/users.png" width="100" />
+            <span>500К+</span>
+            <p>
+              Присоединенных <br />
+              пользователей
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-top">
+          <div>
+            <p>
+              Карьера
+              <img class="decorate-image" src="./decorate1.png" />
+            </p>
+            <p>начинается здесь</p>
+          </div>
+          <button class="find-work-button">Найти работу</button>
+        </div>
+        <div class="footer-bottom">
+          <span>2024. Все права защищены ©</span
+          ><img src="./logo.svg" width="60" />
+          <ul>
+            <li>
+              <a>Facebook</a>
+            </li>
+            <li>
+              <a>Twitter</a>
+            </li>
+            <li><a>Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div class="popup__bg">
+      <div class="popup-contact-us__wrapper">
+        <img src="./popup.png" width="100%" />
+        <div class="popup__content">
+          <h2>Оставьте заявку и мы вам перезвоним!</h2>
+          <p>
+            Мы рады, что вы хотите узнать больше о наших услугах/продуктах.
+            Пожалуйста, заполните форму ниже, чтобы мы могли связаться с вами
+            как можно скорее.
+          </p>
+          <input type="text" placeholder="Ваше имя" />
+          <input type="text" placeholder="Ваш номер телефона" />
+          <button class="send-popup">Отправить</button>
+        </div>
+        <div class="close-popup-button">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.ts"></script>
+  </body>
+</html>

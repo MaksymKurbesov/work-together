@@ -1,0 +1,52 @@
+@import './scss/fonts';
+@import './scss/header';
+@import './scss/hero';
+@import './scss/work-for-you';
+@import './scss/with-us';
+@import './scss/vacancy';
+@import './scss/faq';
+@import './scss/join-community';
+@import './scss/footer';
+@import './scss/popups';
+
+
+:root {
+  --light-gray: #f3f3f3;
+  --blue: #352ce8;
+  --border-radius: 30px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: DidactGothic;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.leave-request-button, .all-vacancy {
+  margin-left: auto;
+  background: var(--blue);
+  border-radius: 20px;
+  border: none;
+  padding: 7px 15px;
+  color: white;
+  font-family: inherit;
+}
