@@ -9,7 +9,9 @@
   <body>
     <div class="container">
       <header class="header">
-        <img class="header__logo" src="./logo.svg" width="50" />
+        <a href="/"
+          ><img class="header__logo" src="/logo.svg" width="50" alt=""
+        /></a>
         <nav>
           <ul>
             <li><a href="#">Преимущества</a></li>
@@ -32,7 +34,7 @@
               Открытые вакансии ждут вас: Ваш следующий вызов начинается здесь
             </p>
             <button class="hero__more-button">Подробнее</button>
-            <a class="find-work-button" href="./vacancies">Найти работу</a>
+            <a class="find-work-button" href="/src/vacancies/">Найти работу</a>
           </div>
           <div>
             <div class="hero__image-wrapper">
@@ -201,8 +203,8 @@
               </ul>
             </div>
           </div>
-          <button class="find-work-button with-us__button">
-            Начать с нами
+          <button class="leave-request-button with-us__button">
+            Оставить заявку
           </button>
         </div>
       </section>
@@ -214,10 +216,6 @@
             <li>
               <div class="vacancy-info">
                 <h3>Сборщик</h3>
-                <!--                <p>-->
-                <!--                  Погрузитесь в мир гибкости и свободы, исследуя город и-->
-                <!--                  встречая новых людей каждый день.-->
-                <!--                </p>-->
                 <button>
                   Подробнее <img src="./icons/arrow.svg" width="15" />
                 </button>
@@ -226,10 +224,6 @@
             <li>
               <div class="vacancy-info">
                 <h3>Официант</h3>
-                <!--                <p>-->
-                <!--                  Откройте для себя мир, где каждый день предлагает новую-->
-                <!--                  загадку под капотом.-->
-                <!--                </p>-->
                 <button>
                   Подробнее <img src="./icons/arrow.svg" width="15" />
                 </button>
@@ -238,10 +232,6 @@
             <li>
               <div class="vacancy-info">
                 <h3>Строитель</h3>
-                <!--                <p>-->
-                <!--                  Станьте создателем новых пространств и преобразуйте ландшафт-->
-                <!--                  вокруг себя.-->
-                <!--                </p>-->
                 <button>
                   Подробнее <img src="./icons/arrow.svg" width="15" />
                 </button>
@@ -250,17 +240,15 @@
             <li>
               <div class="vacancy-info">
                 <h3>Повар</h3>
-                <!--                <p>-->
-                <!--                  Сотворите нечто вечное, сочетая красоту и функциональность в-->
-                <!--                  каждом проекте.-->
-                <!--                </p>-->
                 <button>
                   Подробнее <img src="./icons/arrow.svg" width="15" />
                 </button>
               </div>
             </li>
           </ul>
-          <button class="all-vacancy">Все вакансии</button>
+          <a href="/src/vacancies/" class="all-vacancy find-work-button"
+            >Все вакансии</a
+          >
         </section>
         <section class="faq">
           <div class="faq-title">

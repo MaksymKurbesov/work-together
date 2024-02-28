@@ -12,7 +12,10 @@ document.addEventListener("readystatechange", () => {
 
 const contactUsPopup = new PopupController("popup-contact-us__wrapper");
 
-const leaveRequestButton = document.querySelector(".leave-request-button");
-leaveRequestButton?.addEventListener("click", () => {
-  contactUsPopup.showPopup();
+const leaveRequestButtons = document.querySelectorAll(".leave-request-button");
+
+leaveRequestButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    contactUsPopup.showPopup();
+  });
 });
