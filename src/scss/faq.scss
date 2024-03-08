@@ -9,6 +9,8 @@
     font-weight: 600;
     line-height: 0.8;
     margin-bottom: 30px;
+
+    opacity: 0;
 }
 
 .faq-title > div {
@@ -29,6 +31,8 @@
     position: relative;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
+
+    opacity: 0;
 }
 
 .collapse {
@@ -36,6 +40,7 @@
     color: rgba(0, 0, 0, 0.5);
     font-size: 18px;
 }
+
 
 .faq-list li h3 {
     font-weight: 400;
@@ -51,7 +56,7 @@
 
 .faq-list li img {
     position: absolute;
-    top: 20px;
+    top: 30px;
     right: 0;
     opacity: 0.4;
     transition: 0.35s ease all;

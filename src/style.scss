@@ -4,11 +4,13 @@
 @import './scss/work-for-you';
 @import './scss/with-us';
 @import './scss/vacancy';
+@import './scss/in-digits';
 @import './scss/faq';
+@import './scss/feedbacks';
+@import './scss/partners';
 @import './scss/join-community';
 @import './scss/footer';
 @import './scss/popups';
-
 
 :root {
   --light-gray: #f3f3f3;
@@ -53,3 +55,4 @@ ul, ol {
   font-size: 14px;
   cursor: pointer;
 }
+

@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Title</title>
+    <title>WorkTogether - все вакансии</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <div class="container">
@@ -20,6 +21,219 @@
         </nav>
         <button class="leave-request-button">Оставить заявку</button>
       </header>
+      <main class="vacancies-wrapper">
+        <h1 class="vacancies-title">Вакансии</h1>
+        <p class="vacancies-subtitle">
+          Найдите вашу идеальную работу среди наших актуальных предложений
+        </p>
+        <img class="vacancies-image" src="/vacancies-bg.png" width="100%" />
+        <div class="vacancies-filter-wrapper">
+          <div class="filters-wrapper">
+            <p>Страна</p>
+            <ul class="filter-group">
+              <li>
+                <input
+                  data-filter-type="country"
+                  id="great-britain"
+                  type="checkbox"
+                  value="Великобритания"
+                />
+                <label for="great-britain">Великобритания</label>
+              </li>
+              <li>
+                <input
+                  data-filter-type="country"
+                  id="usa"
+                  type="checkbox"
+                  value="США"
+                />
+                <label for="usa">США</label>
+              </li>
+              <li>
+                <input
+                  data-filter-type="country"
+                  id="germany"
+                  type="checkbox"
+                  value="Германия"
+                />
+                <label for="germany">Германия</label>
+              </li>
+              <li>
+                <input
+                  data-filter-type="country"
+                  id="norway"
+                  type="checkbox"
+                  value="Норвегия"
+                />
+                <label for="norway">Норвегия</label>
+              </li>
+              <li>
+                <input
+                  data-filter-type="country"
+                  id="spain"
+                  type="checkbox"
+                  value="Испания"
+                />
+                <label for="spain">Испания</label>
+              </li>
+            </ul>
+            <p>Категория</p>
+            <ul class="filter-group">
+              <li>
+                <input
+                  data-filter-type="category"
+                  value="Мебельщик"
+                  type="checkbox"
+                  id="furniture"
+                />
+                <label for="furniture">Мебельщик</label>
+              </li>
+              <li>
+                <input
+                  data-filter-type="category"
+                  value="Разнорабочий"
+                  type="checkbox"
+                  id="handyman"
+                />
+                <label for="handyman">Разнорабочий</label>
+              </li>
+              <li>
+                <input
+                  data-filter-type="category"
+                  value="Упаковщик"
+                  type="checkbox"
+                  id="packer"
+                />
+                <label for="packer">Упаковщик</label>
+              </li>
+              <li>
+                <input
+                  data-filter-type="category"
+                  value="Водитель"
+                  type="checkbox"
+                  id="driver"
+                />
+                <label for="driver">Водитель</label>
+              </li>
+              <li>
+                <input
+                  data-filter-type="category"
+                  value="Сварщик"
+                  type="checkbox"
+                  id="welder"
+                />
+                <label for="welder">Сварщик</label>
+              </li>
+              <li>
+                <input
+                  data-filter-type="category"
+                  value="Повар"
+                  type="checkbox"
+                  id="cook"
+                />
+                <label for="cook">Повар</label>
+              </li>
+            </ul>
+            <p>Занятость</p>
+            <ul class="filter-group">
+              <li>
+                <input
+                  id="full"
+                  data-filter-type="employment"
+                  value="Полная"
+                  type="checkbox"
+                />
+                <label for="full">Полная</label>
+              </li>
+              <li>
+                <input
+                  id="half"
+                  data-filter-type="employment"
+                  value="Частичная"
+                  type="checkbox"
+                />
+                <label for="half">Частичная</label>
+              </li>
+            </ul>
+            <p>Пол</p>
+            <ul class="filter-group">
+              <li>
+                <input
+                  id="man-woman"
+                  data-filter-type="gender"
+                  value="Мужчины/женщины"
+                  type="checkbox"
+                />
+                <label>Мужчины/женщины</label>
+              </li>
+              <li>
+                <input
+                  id="man"
+                  data-filter-type="gender"
+                  value="Мужчины"
+                  type="checkbox"
+                />
+                <label>Мужчины</label>
+              </li>
+              <li>
+                <input
+                  id="woman"
+                  data-filter-type="gender"
+                  value="Женщины"
+                  type="checkbox"
+                />
+                <label>Женщины</label>
+              </li>
+            </ul>
+            <p>Место работы</p>
+            <ul class="filter-group">
+              <li>
+                <input type="checkbox" />
+                <label>Склад</label>
+              </li>
+              <li>
+                <input type="checkbox" />
+                <label>Отель</label>
+              </li>
+              <li>
+                <input type="checkbox" />
+                <label>Фабрика</label>
+              </li>
+              <li>
+                <input type="checkbox" />
+                <label>Офис</label>
+              </li>
+              <li>
+                <input type="checkbox" />
+                <label>Сезонные работы</label>
+              </li>
+              <li>
+                <input type="checkbox" />
+                <label>Завод</label>
+              </li>
+            </ul>
+            <p>Знание языка</p>
+            <ul class="filter-group">
+              <li>
+                <input type="checkbox" />
+                <label>Без знания языка</label>
+              </li>
+              <li>
+                <input type="checkbox" />
+                <label>Со знанием языка</label>
+              </li>
+            </ul>
+            <p>Жилье</p>
+            <ul class="filter-group">
+              <li>
+                <input type="checkbox" />
+                <label>Жилье бесплатно</label>
+              </li>
+            </ul>
+          </div>
+          <ul class="vacancies-list"></ul>
+        </div>
+      </main>
     </div>
     <script type="module" src="/main.ts"></script>
   </body>

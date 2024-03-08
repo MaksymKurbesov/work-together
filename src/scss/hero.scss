@@ -10,19 +10,16 @@
     font-size: 40px;
     line-height: 1;
     margin-bottom: 30px;
+
+    opacity: 0;
 }
 
 .hero__subtitle {
     margin-bottom: 60px;
+
+    opacity: 0;
 }
 
-.hero__more-button {
-    background: none;
-    border: 1px solid black;
-    border-radius: var(--border-radius);
-    padding: 7px 20px;
-    margin-right: 10px;
-}
 
 .find-work-button {
     position: relative;
@@ -34,6 +31,8 @@
     padding: 7px 20px;
     border-radius: var(--border-radius);
     cursor: pointer;
+
+    opacity: 0;
 }
 
 .find-work-button:after {
@@ -50,6 +49,10 @@
 
 .hero__image-wrapper {
     position: relative;
+}
+
+.hero__image-wrapper > img {
+    opacity: 0;
 }
 
 .hero__image-wrapper p {
@@ -82,6 +85,8 @@
     border-radius: var(--border-radius);
     font-family: inherit;
     cursor: pointer;
+
+    opacity: 0;
 }
 
 .hero__image {
@@ -96,6 +101,8 @@
     padding: 25px 35px;
     border-radius: var(--border-radius);
     gap: 10px;
+
+    opacity: 0;
 }
 
 

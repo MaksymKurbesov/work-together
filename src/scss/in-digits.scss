@@ -1,0 +1,74 @@
+.in-digits {
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 35px;
+    padding-right: 55px;
+    align-items: center;
+    background-color: var(--blue);
+    color: white;
+    border-radius: var(--border-radius);
+    background-image: url('/in-digits-bg.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    opacity: 0;
+}
+
+.in-digits ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    //gap: 15px;
+}
+
+.in-digits ul li {
+    display: flex;
+    flex-direction: column;
+    //background: var(--blue);
+    color: white;
+    padding: 20px;
+}
+
+.in-digits ul li:nth-child(odd) {
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.in-digits ul li:nth-child(1), .in-digits ul li:nth-child(2) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.in-digits ul li h3 {
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.4;
+}
+
+.in-digits ul li > p {
+    margin-top: auto;
+}
+
+.in-digits ul li span {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.in-digits-text {
+    text-align: right;
+}
+
+.in-digits-title {
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.in-digits-text p:nth-child(2) {
+    margin-bottom: 25px;
+    opacity: 0.5;
+}
+
+.in-digits-text p:nth-child(3) {
+    opacity: 0.5;
+}

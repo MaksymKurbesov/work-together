@@ -1,6 +1,18 @@
 import "./src/style.scss";
+import "./src/vacancies/index.scss";
 import "./src/ts/collapse";
 import { PopupController } from "./src/ts/PopupController";
+import "./src/ts/filterVacancies";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "./src/ts/slider";
+import "./src/ts/intersection";
+import "./src/ts/countAnimation";
+import "./src/ts/animations/hero";
+import "./src/ts/animations/header";
+import "./src/ts/animations/workForYou";
+import "./src/ts/animations/withUs";
 
 document.addEventListener("readystatechange", () => {
   const popupBg = document.querySelector(".popup__bg");

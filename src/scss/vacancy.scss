@@ -6,11 +6,15 @@
     font-size: 50px;
     margin: 0 auto;
     text-align: center;
+
+    opacity: 0;
 }
 
 .vacancy-subtitle {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+
+    opacity: 0;
 }
 
 .vacancy-list {
@@ -28,11 +32,13 @@
     background-position: bottom;
     display: flex;
     flex-direction: column;
-    height: 400px;
+    height: 350px;
     border-radius: var(--border-radius);
     transition: all 0.3s ease-in-out;
     color: black;
     text-align: center;
+
+    opacity: 0;
 }
 
 .vacancy-list > li:hover {
@@ -40,19 +46,35 @@
 }
 
 .vacancy-list > li:nth-child(1) {
-    background-image: url("/vacancy/1.png");
+    background-image: url("/vacancy/11.png");
 }
 
 .vacancy-list > li:nth-child(2) {
-    background-image: url("/vacancy/2.png");
+    background-image: url("/vacancy/22.png");
 }
 
 .vacancy-list > li:nth-child(3) {
-    background-image: url("/vacancy/3.png");
+    background-image: url("/vacancy/33.png");
 }
 
 .vacancy-list > li:nth-child(4) {
-    background-image: url("/vacancy/4.png");
+    background-image: url("/vacancy/44.png");
+}
+
+.vacancy-list > li:nth-child(5) {
+    background-image: url("/vacancy/55.png");
+}
+
+.vacancy-list > li:nth-child(6) {
+    background-image: url("/vacancy/66.png");
+}
+
+.vacancy-list > li:nth-child(7) {
+    background-image: url("/vacancy/77.png");
+}
+
+.vacancy-list > li:nth-child(8) {
+    background-image: url("/vacancy/88.png");
 }
 
 .vacancy-info {
