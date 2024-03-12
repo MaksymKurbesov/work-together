@@ -1,0 +1,139 @@
+@media screen and (max-width: 1200px) {
+  .hero {
+    grid-template-columns: 45% 1fr;
+    margin-bottom: 50px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero__image-wrapper p {
+    font-size: 16px;
+    left: 35px;
+    top: 35px;
+  }
+
+  .hero__image-wrapper p span {
+    font-size: 40px;
+  }
+
+  .hero__statistic {
+    padding: 15px 30px;
+  }
+
+  .hero__statistic h2 {
+    font-size: 26px;
+  }
+
+  .hero__statistic p {
+    font-size: 14px;
+  }
+
+  .work-for-you {
+    margin-bottom: 50px;
+  }
+
+  .work-for-you h2 {
+    font-size: 40px;
+    max-width: 440px;
+  }
+
+  .work-for-you ul {
+    grid-template-areas:
+      "a b"
+      "d b"
+      "c c";
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .work-for-you ul li:nth-child(3) {
+    background-position: initial;
+  }
+
+  .with-us {
+    background-position: 40vw center;
+    background-size: 750px;
+    margin-bottom: 50px;
+  }
+
+  .with-us-card__header {
+    padding: 15px 25px;
+  }
+
+  .with-us-card h2 {
+    font-size: 40px;
+  }
+
+  .tags-list li {
+    font-size: 14px;
+    padding: 5px 12px;
+  }
+
+  .features-list {
+    padding: 15px 25px;
+  }
+
+  .features-list li {
+    padding: 10px;
+  }
+
+  .features-list li img {
+    padding: 7px;
+    width: 34px;
+  }
+
+  .features-list li h3 {
+    font-size: 16px;
+  }
+
+  .features-list li p {
+    font-size: 14px;
+  }
+
+  .vacancy {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+  }
+
+  .vacancy-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .vacancy-list li {
+    flex-basis: 200px;
+  }
+
+  .vacancy-list > li {
+    height: 300px;
+  }
+
+  .in-digits {
+    grid-template-columns: 1fr;
+    padding: 25px;
+  }
+
+  .in-digits ul li {
+    padding: 15px;
+  }
+
+  .in-digits-text {
+    text-align: left;
+  }
+
+  .in-digits-title {
+    text-align: center;
+  }
+}

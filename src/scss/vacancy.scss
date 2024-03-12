@@ -1,114 +1,114 @@
 .vacancy {
-    margin-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 .vacancy h2 {
-    font-size: 50px;
-    margin: 0 auto;
-    text-align: center;
+  font-size: 50px;
+  margin: 0 auto;
+  text-align: center;
 
-    opacity: 0;
+  opacity: 0;
 }
 
 .vacancy-subtitle {
-    text-align: center;
-    margin-bottom: 50px;
+  text-align: center;
+  margin-bottom: 50px;
 
-    opacity: 0;
+  opacity: 0;
 }
 
 .vacancy-list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    //grid-template-rows: 500px;
-    gap: 70px;
-    color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  //grid-template-rows: 500px;
+  gap: 35px;
+  color: white;
 }
 
 .vacancy-list > li {
-    //padding: 20px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    display: flex;
-    flex-direction: column;
-    height: 350px;
-    border-radius: var(--border-radius);
-    transition: all 0.3s ease-in-out;
-    color: black;
-    text-align: center;
+  //padding: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  height: 370px;
+  border-radius: var(--border-radius);
+  transition: all 0.3s ease-in-out;
+  color: black;
+  text-align: center;
 
-    opacity: 0;
+  opacity: 0;
 }
 
 .vacancy-list > li:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 .vacancy-list > li:nth-child(1) {
-    background-image: url("/vacancy/11.png");
+  background-image: url("/vacancy/11.png");
 }
 
 .vacancy-list > li:nth-child(2) {
-    background-image: url("/vacancy/22.png");
+  background-image: url("/vacancy/22.png");
 }
 
 .vacancy-list > li:nth-child(3) {
-    background-image: url("/vacancy/33.png");
+  background-image: url("/vacancy/33.png");
 }
 
 .vacancy-list > li:nth-child(4) {
-    background-image: url("/vacancy/44.png");
+  background-image: url("/vacancy/44.png");
 }
 
 .vacancy-list > li:nth-child(5) {
-    background-image: url("/vacancy/55.png");
+  background-image: url("/vacancy/55.png");
 }
 
 .vacancy-list > li:nth-child(6) {
-    background-image: url("/vacancy/66.png");
+  background-image: url("/vacancy/66.png");
 }
 
 .vacancy-list > li:nth-child(7) {
-    background-image: url("/vacancy/77.png");
+  background-image: url("/vacancy/77.png");
 }
 
 .vacancy-list > li:nth-child(8) {
-    background-image: url("/vacancy/88.png");
+  background-image: url("/vacancy/88.png");
 }
 
 .vacancy-info {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .vacancy-info h3 {
-    font-size: 36px;
+  font-size: 36px;
 }
 
 .vacancy-info p {
-    margin-bottom: 35px;
+  margin-bottom: 35px;
 }
 
 .vacancy-info button {
-    margin-top: auto;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    text-align: left;
-    width: 100%;
-    border-radius: var(--border-radius);
-    border: none;
-    padding: 5px 30px;
-    font-family: inherit;
-    font-weight: 600;
-    cursor: pointer;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-align: left;
+  width: 100%;
+  border-radius: var(--border-radius);
+  border: none;
+  padding: 5px 30px;
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .all-vacancy {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 40px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 40px;
 }
