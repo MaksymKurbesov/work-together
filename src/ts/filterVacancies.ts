@@ -1,17 +1,45 @@
 import { VACANCIES } from "./VACANCIES";
 import { generateVacancyList } from "./generateVacancies";
+import { handleListenerOnButtons } from "./vacanciesHandlers";
 
-let FILTER_STATE = {
+export let FILTER_STATE = {
   country: [],
   category: [],
   employment: [],
   gender: [],
   workPlace: [],
-  languageSkill: "",
+  languageSkill: [],
   house: false,
 };
 
 const filters = document.querySelectorAll(".filters-wrapper input");
+
+export const filterVacancies = (vacancies, filters) => {
+  return vacancies.filter((vacancy) => {
+    const countryMatch =
+      filters.country.length === 0 || filters.country.includes(vacancy.country);
+    const categoryMatch =
+      filters.category.length === 0 ||
+      filters.category.includes(vacancy.category);
+    const employmentMatch =
+      filters.employment.length === 0 ||
+      filters.employment.includes(vacancy.employment);
+    const genderMatch =
+      filters.gender.length === 0 || filters.gender.includes(vacancy.gender);
+    const languageMatch =
+      filters.languageSkill.length === 0 ||
+      filters.languageSkill.includes(vacancy.languageSkill);
+
+    // Соответствие всем фильтрам
+    return (
+      countryMatch &&
+      categoryMatch &&
+      employmentMatch &&
+      genderMatch &&
+      languageMatch
+    );
+  });
+};
 
 const checkInclude = (filter, value) => {
   return FILTER_STATE[filter].includes(value);
@@ -26,12 +54,14 @@ filters.forEach((filter) =>
     const isCategoryInclude = checkInclude("category", value);
     const isEmploymentInclude = checkInclude("employment", value);
     const isGenderInclude = checkInclude("gender", value);
+    const isLanguageInclude = checkInclude("languageSkill", value);
 
     if (
       isCountryInclude ||
       isCategoryInclude ||
       isEmploymentInclude ||
-      isGenderInclude
+      isGenderInclude ||
+      isLanguageInclude
     ) {
       const itemIndex = FILTER_STATE[filterType].indexOf(value);
 
@@ -43,29 +73,19 @@ filters.forEach((filter) =>
     }
 
     const filteredVacancies = filterVacancies(VACANCIES, FILTER_STATE);
-    generateVacancyList(filteredVacancies);
+    const paginationContainer = $(".pagination");
+
+    paginationContainer.pagination({
+      dataSource: filteredVacancies,
+      pageRange: 1,
+      showPrevious: false,
+      showNext: false,
+      activeClassName: "active-page",
+      callback: (data) => {
+        const html = generateVacancyList(data);
+        $(".pagination ul").html(html);
+        handleListenerOnButtons();
+      },
+    });
   })
 );
-
-const filterVacancies = (vacancies, filters) => {
-  return vacancies.filter((vacancy) => {
-    const countryMatch =
-      filters.country.length === 0 || filters.country.includes(vacancy.country);
-    const categoryMatch =
-      filters.category.length === 0 ||
-      filters.category.includes(vacancy.category);
-    const employmentMatch =
-      filters.employment.length === 0 ||
-      filters.employment.includes(vacancy.employment);
-
-    const genderMatch =
-      filters.gender.length === 0 || filters.gender.includes(vacancy.gender);
-
-    // Соответствие всем фильтрам
-    return countryMatch && categoryMatch && employmentMatch && genderMatch;
-  });
-};
-
-const filteredVacancies = filterVacancies(VACANCIES, FILTER_STATE);
-
-generateVacancyList(filteredVacancies);

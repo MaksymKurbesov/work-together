@@ -1,0 +1,31 @@
+.certs {
+    margin-bottom: 100px;
+}
+
+.certs-title {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+
+    opacity: 0;
+}
+
+.certs-wrapper {
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: var(--light-gray);
+    gap: 20px;
+    align-items: center;
+
+    opacity: 0;
+}
+
+
+.certs-wrapper div {
+    opacity: 0;
+}
+
+.certs-wrapper img {
+    width: 100%;
+}

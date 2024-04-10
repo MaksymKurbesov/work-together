@@ -59,6 +59,22 @@
     font: inherit;
     font-weight: 600;
     padding: 8px 0;
+    cursor: pointer;
+    transition: 0.35s ease all;
+}
+
+.inputs-wrapper button:hover {
+    color: white;
+    background: var(--blue);
+}
+
+.inputs-wrapper button img {
+    transition: 0.35s ease all;
+}
+
+.inputs-wrapper button:hover img {
+    transition: 0.35s ease all;
+    filter: invert(1);
 }
 
 .users {

@@ -3,16 +3,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    padding: 35px;
-    padding-right: 55px;
+    //padding: 35px;
     align-items: center;
-    background-color: var(--blue);
     color: white;
     border-radius: var(--border-radius);
-    background-image: url('/in-digits-bg.png');
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: cover;
+    //background-image: url('/in-digits-bg.png');
+    //background-position: right;
+    //background-repeat: no-repeat;
+    //background-size: 100% 100%;
 
     opacity: 0;
 }
@@ -20,6 +18,12 @@
 .in-digits ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background-color: var(--blue);
+    background-image: url(/in-digits-bg.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: var(--border-radius);
     //gap: 15px;
 }
 
@@ -56,6 +60,7 @@
 
 .in-digits-text {
     text-align: right;
+    color: black;
 }
 
 .in-digits-title {

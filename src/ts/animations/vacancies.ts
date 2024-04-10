@@ -20,5 +20,10 @@ export const initVacancies = () => {
       opacity: [0, 1],
       duration: 500,
       delay: anime.stagger(100),
+    })
+    .add({
+      targets: document.querySelector(".all-vacancy"),
+      opacity: [0, 1],
+      duration: 500,
     });
 };

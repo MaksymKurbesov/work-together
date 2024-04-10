@@ -9,6 +9,9 @@ import { initFeedbacks } from "./animations/feedbacks";
 import { initOurPartners } from "./animations/ourPartners";
 import { initJoinCommunity } from "./animations/joinCommunity";
 import { initFooter } from "./animations/footer";
+import { initCerts } from "./animations/certs";
+import { initWhyPeople } from "./animations/why-people";
+import { initRoadmap } from "./animations/roadmap";
 
 const observe = (selector, callback, options) => {
   let animIsPlayed = false;
@@ -38,8 +41,16 @@ observe(".with-us-card", initWithUs, {
   rootMargin: "300px",
 });
 observe(".vacancy", initVacancies, {
-  threshold: 1.0,
-  rootMargin: "600px",
+  threshold: 0.3,
+  rootMargin: "150px",
+});
+observe(".why-people-work-with-us", initWhyPeople, {
+  threshold: 0.4,
+  rootMargin: "150px",
+});
+observe(".roadmap", initRoadmap, {
+  threshold: 0.4,
+  rootMargin: "150px",
 });
 observe(".in-digits", initInDigits, {
   threshold: 1.0,
@@ -48,6 +59,10 @@ observe(".in-digits", initInDigits, {
 observe(".faq", initFaq, {
   threshold: 1.0,
   rootMargin: "150px",
+});
+observe(".certs", initCerts, {
+  threshold: 1.0,
+  rootMargin: "450px",
 });
 observe(".feedbacks", initFeedbacks, {
   threshold: 1.0,

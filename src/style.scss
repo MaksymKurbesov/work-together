@@ -4,8 +4,11 @@
 @import './scss/work-for-you';
 @import './scss/with-us';
 @import './scss/vacancy';
+@import './scss/why-people';
+@import './scss/roadmap';
 @import './scss/in-digits';
 @import './scss/faq';
+@import './scss/certs';
 @import './scss/feedbacks';
 @import './scss/partners';
 @import './scss/join-community';
@@ -13,6 +16,7 @@
 @import './scss/popups';
 @import './vacancies/index';
 @import './scss/media-queries';
+@import './scss/mobile-menu';
 
 :root {
   --light-gray: #f3f3f3;
@@ -58,3 +62,7 @@ ul, ol {
   cursor: pointer;
 }
 
+
+//.swiper-wrapper {
+//  padding-bottom: 10px;
+//}

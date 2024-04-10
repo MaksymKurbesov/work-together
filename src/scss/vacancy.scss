@@ -1,5 +1,6 @@
 .vacancy {
   margin-bottom: 100px;
+  position: relative;
 }
 
 .vacancy h2 {
@@ -39,6 +40,26 @@
   text-align: center;
 
   opacity: 0;
+}
+
+.vacancy-info-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 370px;
+  border-radius: var(--border-radius);
+  transition: all 0.3s ease-in-out;
+  color: black;
+  text-align: center;
+  //opacity: 0;
+}
+
+.swiper-container-vacancy {
+  display: none !important;
+}
+
+.vacancy-info-slider > img {
+  width: 200px;
 }
 
 .vacancy-list > li:hover {
@@ -91,7 +112,8 @@
   margin-bottom: 35px;
 }
 
-.vacancy-info button {
+
+.vacancy-info button, .vacancy-info-slider button {
   margin-top: auto;
   display: flex;
   align-items: center;
@@ -106,9 +128,68 @@
   cursor: pointer;
 }
 
+.vacancy-info-slider button {
+  width: 60%;
+}
+
 .all-vacancy {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
   margin-top: 40px;
+}
+
+.swiper-vacancy-buttons {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  z-index: 51;
+}
+
+.swiper-vacancy-buttons svg {
+  filter: invert(1);
+}
+
+.swiper-button-prev2, .swiper-button-next2 {
+  width: 40px;
+  height: 40px;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: var(--blue);
+}
+
+.swiper-button-prev2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateZ(180deg);
+}
+
+.swiper-button-next2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 580px){
+  .swiper-container-vacancy {
+    display: block !important;
+  }
+
+  .vacancy-list {
+    display: none !important;
+  }
+
+  .vacancy-info-slider {
+    height: initial;
+  }
 }

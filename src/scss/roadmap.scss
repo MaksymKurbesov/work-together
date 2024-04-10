@@ -1,0 +1,165 @@
+.roadmap {
+    margin-bottom: 100px;
+    background-color: var(--light-gray);
+    border-radius: var(--border-radius);
+    padding: 30px;
+
+    opacity: 0;
+}
+
+.roadmap h2 {
+    font-size: 50px;
+    opacity: 0;
+}
+
+.roadmap > p {
+    margin-bottom: 35px;
+    opacity: 0;
+}
+
+.roadmap-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding-bottom: 70px;
+}
+
+.roadmap-list li {
+    position: relative;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+}
+
+.roadmap-list li:nth-child(odd) {
+    background-color: var(--blue);
+    color: white;
+    background-image: url('/feature1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.roadmap-list li:nth-child(odd) span {
+    color: white;
+}
+
+.roadmap-list li:nth-child(2), .roadmap-list li:nth-child(6) {
+    top: 20px;
+}
+
+.roadmap-list li:nth-child(3), .roadmap-list li:nth-child(7) {
+    top: 40px;
+}
+
+.roadmap-list li:nth-child(4), .roadmap-list li:nth-child(8) {
+    top: 60px;
+}
+
+
+.roadmap-list li span {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--blue);
+}
+
+
+@media screen and (max-width: 1024px) {
+    .roadmap-list {
+        grid-template-columns: repeat(3, 1fr);
+        padding-bottom: 40px;
+    }
+
+    .roadmap-list li {
+        top: 0 !important;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .roadmap-list {
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 0;
+        gap: 10px;
+    }
+
+    .roadmap-list li:nth-child(odd) span {
+        color: var(--blue);
+    }
+
+    .roadmap-list li p {
+        //color: black;
+        color: black;
+    }
+
+    .roadmap-list li:nth-child(odd) {
+        background-color: white;
+        background-image: none;
+    }
+
+    .roadmap-list li:nth-child(1), .roadmap-list li:nth-child(4), .roadmap-list li:nth-child(5), .roadmap-list li:nth-child(8)    {
+        background-color: var(--blue);
+        color: white;
+        background-image: url('/feature1.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .roadmap-list li:nth-child(1) span,  .roadmap-list li:nth-child(4) span,  .roadmap-list li:nth-child(5) span, .roadmap-list li:nth-child(8) span {
+        color: white;
+    }
+
+    .roadmap-list li:nth-child(1) p,  .roadmap-list li:nth-child(4) p,  .roadmap-list li:nth-child(5) p, .roadmap-list li:nth-child(8) p {
+        color: white;
+    }
+}
+
+
+@media screen and (max-width: 580px) {
+    .roadmap {
+        padding: 15px;
+    }
+
+    .roadmap-list {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .roadmap-list li:nth-child(odd) {
+        background-color: var(--blue);
+        color: white;
+        background-image: url('/feature1.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .roadmap-list li:nth-child(odd) p {
+        color: white;
+    }
+
+    .roadmap-list li:nth-child(odd) span {
+        color: white;
+    }
+
+
+    .roadmap-list li:nth-child(even) {
+        background-color: white;
+        color: black;
+        background-image: none;
+    }
+
+    .roadmap-list li:nth-child(even) span {
+        color: black;
+    }
+
+    .roadmap-list li:nth-child(even) p {
+        color: rgba(0, 0, 0, 0.7);
+    }
+}

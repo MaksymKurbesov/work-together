@@ -2,12 +2,16 @@ export class PopupController {
   popup: HTMLElement | null;
   popupBg: HTMLElement | null;
   closeButton: HTMLElement | null;
+  closeButtonSpan: HTMLElement[] | null;
 
-  constructor(popupName: string) {
+  constructor(popupName: string, popupBg) {
     this.popup = document.querySelector(`.${popupName}`);
-    this.popupBg = document.querySelector(`.popup__bg`);
+    this.popupBg = document.querySelector(`.${popupBg}`);
     this.closeButton = document.querySelector(
       `.${popupName} .close-popup-button`
+    );
+    this.closeButtonSpan = document.querySelector(
+      `.${popupName} .close-popup-button span`
     );
 
     this.init();
@@ -21,27 +25,33 @@ export class PopupController {
     this.popupBg?.classList.add("active");
 
     document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") {
-        this.hidePopup();
-      }
+      this.hidePopup(e);
     });
   }
 
-  hidePopup() {
-    document.body.style.overflow = "visible";
-    document.body.style.paddingRight = "0";
+  hidePopup(e) {
+    const isCorrectListener =
+      e.target === this.popupBg ||
+      e.key === "Escape" ||
+      e.target === this.closeButton ||
+      e.target.tagName === "SPAN";
 
-    this.popup?.classList.remove("active");
-    this.popupBg?.classList.remove("active");
+    if (isCorrectListener) {
+      document.body.style.overflow = "visible";
+      document.body.style.paddingRight = "0";
+
+      this.popup?.classList.remove("active");
+      this.popupBg?.classList.remove("active");
+    }
   }
 
   init() {
-    this.closeButton?.addEventListener("click", () => {
-      this.hidePopup();
+    this.closeButton?.addEventListener("click", (e) => {
+      this.hidePopup(e);
     });
 
-    this.popupBg?.addEventListener("click", () => {
-      this.hidePopup();
+    this.popupBg?.addEventListener("click", (e) => {
+      this.hidePopup(e);
     });
   }
 }

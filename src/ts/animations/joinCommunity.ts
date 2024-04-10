@@ -6,10 +6,15 @@ const tl = anime.timeline({
 
 export const initJoinCommunity = () => {
   tl.add({
-    targets: document.querySelector(".join-community"),
+    targets: document.querySelector(".users"),
     opacity: [0, 1],
     duration: 500,
   })
+    .add({
+      targets: document.querySelector(".join-community"),
+      opacity: [0, 1],
+      duration: 500,
+    })
     .add(
       {
         targets: document.querySelector(".join-community h2"),
@@ -38,14 +43,6 @@ export const initJoinCommunity = () => {
     .add(
       {
         targets: document.querySelector(".inputs-wrapper button"),
-        opacity: [0, 1],
-        duration: 500,
-      },
-      "-=200"
-    )
-    .add(
-      {
-        targets: document.querySelector(".users"),
         opacity: [0, 1],
         duration: 500,
       },
