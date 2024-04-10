@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hire Unity - все вакансии</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script src="http://code.jquery.com/jquery-3.6.1.js"></script>
+    <script src="pagination-lib.ts" type="text/javascript"></script>
+    <script type="module" crossorigin src="/assets/vacancies-3Z55ClrG.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/sendRequestToTelegram-MjsXiVEj.js">
+    <link rel="stylesheet" crossorigin href="/assets/sendRequestToTelegram-Cgdttqrt.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <a href="/"
+          ><img class="header__logo" src="/logo-new.svg" width="50" alt=""
+        /></a>
+        <nav>
+          <ul>
+            <li><a href="#">Преимущества</a></li>
+            <li><a href="#">Вакансии</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Связаться</a></li>
+          </ul>
+        </nav>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <button class="leave-request-button">Оставить заявку</button>
+      </header>
+      <main class="vacancies-wrapper">
+        <h1 class="vacancies-title">Вакансии</h1>
+        <p class="vacancies-subtitle">
+          Найдите вашу идеальную работу среди наших актуальных предложений
+        </p>
+        <img class="vacancies-image" src="/vacancies-bg.png" width="100%" />
+        <div class="vacancies-filter-wrapper">
+          <div class="filter-wrapper-background"></div>
+          <div class="filters-wrapper">
+            <p>Страна</p>
+            <ul class="filter-group">
+              <li>
+                <input
+                  data-filter-type="country"
+                  id="england"
+                  type="checkbox"
+                  value="Англия"
+                />
+                <label for="england">Англия</label>
+              </li>
+              <li>
+                <input
+                  data-filter-type="country"
+                  id="hungary"
+                  type="checkbox"
+                  value="Венгрия"
+                />
+                <label for="hungary">Венгрия</label>
+              </li>
+              <li>
+                <input
+                  data-filter-type="country"
+                  id="germany"
+                  type="checkbox"
+                  value="Германия"
+                />
+                <label for="germany">Германия</label>
+              </li>
+              <li>
+                <input
+                  data-filter-type="country"
+                  id="spain"
+                  type="checkbox"
+                  value="Испания"
+                />
+                <label for="spain">Испания</label>
+              </li>
+              <li>
+                <input
+                  data-filter-type="country"
+                  id="lithuania"
+                  type="checkbox"
+                  value="Литва"
+                />
+                <label for="lithuania">Литва</label>
+              </li>
+              <li>
+                <input
+                  data-filter-type="country"
+                  id="netherlands"
+                  type="checkbox"
+                  value="Нидерланды"
+                />
+                <label for="netherlands">Нидерланды</label>
+              </li>
+              <li>
+                <input
+                  data-filter-type="country"
+                  id="norway"
+                  type="checkbox"
+                  value="Норвегия"
+                />
+                <label for="norway">Норвегия</label>
+              </li>
+              <li>
+                <input
+                  data-filter-type="country"
+                  id="poland"
+                  type="checkbox"
+                  value="Польша"
+                />
+                <label for="poland">Польша</label>
+              </li>
+              <li>
+                <input
+                  data-filter-type="country"
+                  id="czech"
+                  type="checkbox"
+                  value="Чехия"
+                />
+                <label for="czech">Чехия</label>
+              </li>
+              <li>
+                <input
+                  data-filter-type="country"
+                  id="estonia"
+                  type="checkbox"
+                  value="Эстония"
+                />
+                <label for="estonia">Эстония</label>
+              </li>
+            </ul>
+            <p>Категория</p>
+            <ul class="filter-group">
+              <li>
+                <input
+                  data-filter-type="category"
+                  value="Мебельщик"
+                  type="checkbox"
+                  id="furniture"
+                />
+                <label for="furniture">Мебельщик</label>
+              </li>
+              <li>
+                <input
+                  data-filter-type="category"
+                  value="Разнорабочий"
+                  type="checkbox"
+                  id="handyman"
+                />
+                <label for="handyman">Разнорабочий</label>
+              </li>
+              <li>
+                <input
+                  data-filter-type="category"
+                  value="Водитель"
+                  type="checkbox"
+                  id="driver"
+                />
+                <label for="driver">Водитель</label>
+              </li>
+              <li>
+                <input
+                  data-filter-type="category"
+                  value="Курьер"
+                  type="checkbox"
+                  id="courier"
+                />
+                <label for="courier">Курьер</label>
+              </li>
+              <li>
+                <input
+                  data-filter-type="category"
+                  value="Повар"
+                  type="checkbox"
+                  id="cook"
+                />
+                <label for="cook">Повар</label>
+              </li>
+              <li>
+                <input
+                  data-filter-type="category"
+                  value="Кровельщик-плотник"
+                  type="checkbox"
+                  id="roofer"
+                />
+                <label for="roofer">Кровельщик-плотник</label>
+              </li>
+              <li>
+                <input
+                  data-filter-type="category"
+                  value="Горничная"
+                  type="checkbox"
+                  id="maid"
+                />
+                <label for="maid">Горничная</label>
+              </li>
+              <li>
+                <input
+                  data-filter-type="category"
+                  value="Сборщик"
+                  type="checkbox"
+                  id="packer"
+                />
+                <label for="packer">Сборщик</label>
+              </li>
+              <li>
+                <input
+                  data-filter-type="category"
+                  value="Уборщик"
+                  type="checkbox"
+                  id="cleaner"
+                />
+                <label for="cleaner">Уборщик</label>
+              </li>
+            </ul>
+            <p>Занятость</p>
+            <ul class="filter-group">
+              <li>
+                <input
+                  id="full"
+                  data-filter-type="employment"
+                  value="Полная"
+                  type="checkbox"
+                />
+                <label for="full">Полная</label>
+              </li>
+              <li>
+                <input
+                  id="half"
+                  data-filter-type="employment"
+                  value="Частичная"
+                  type="checkbox"
+                />
+                <label for="half">Частичная</label>
+              </li>
+            </ul>
+            <p>Пол</p>
+            <ul class="filter-group">
+              <li>
+                <input
+                  id="man-woman"
+                  data-filter-type="gender"
+                  value="Мужчины/женщины"
+                  type="checkbox"
+                />
+                <label for="man-woman">Мужчины/женщины</label>
+              </li>
+              <li>
+                <input
+                  id="man"
+                  data-filter-type="gender"
+                  value="Мужчины"
+                  type="checkbox"
+                />
+                <label for="man">Мужчины</label>
+              </li>
+              <li>
+                <input
+                  id="woman"
+                  data-filter-type="gender"
+                  value="Женщины"
+                  type="checkbox"
+                />
+                <label for="woman">Женщины</label>
+              </li>
+            </ul>
+            <p>Знание языка</p>
+            <ul class="filter-group">
+              <li>
+                <input
+                  id="no-lang"
+                  type="checkbox"
+                  data-filter-type="languageSkill"
+                  value="Без знания языка"
+                />
+                <label for="no-lang">Без знания языка</label>
+              </li>
+              <li>
+                <input
+                  id="with-lang"
+                  type="checkbox"
+                  data-filter-type="languageSkill"
+                  value="Со знанием языка"
+                />
+                <label for="with-lang">Со знанием языка</label>
+              </li>
+            </ul>
+            <p>Жилье</p>
+            <ul class="filter-group">
+              <li>
+                <input type="checkbox" />
+                <label>Жилье бесплатно</label>
+              </li>
+            </ul>
+          </div>
+          <div class="vacancies-settings">
+            <button class="settings-button">
+              <img src="/icons/filter.svg" width="25" />Фильтры
+            </button>
+          </div>
+          <div class="vacanies-list-wrapper">
+            <ul class="vacancies-list"></ul>
+            <div class="pagination">
+              <ul></ul>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="popup__bg">
+      <div class="popup-contact-us__wrapper">
+        <img src="/popup.png" width="100%" />
+        <div class="popup__content">
+          <h2>Оставьте заявку и мы вам перезвоним!</h2>
+          <p>
+            Мы рады, что вы хотите узнать больше о наших услугах/продуктах.
+            Пожалуйста, заполните форму ниже, чтобы мы могли связаться с вами
+            как можно скорее.
+          </p>
+          <input type="text" placeholder="Ваше имя" />
+          <input type="text" placeholder="Ваш номер телефона" />
+          <button class="send-popup">Отправить</button>
+        </div>
+        <div class="close-popup-button">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <div class="vacancy-popup__bg">
+      <div class="vacancy-popup__content">
+        <img src="/popup.png" width="100%" alt="" />
+        <div class="vacancy-wrapper-text">
+          <p class="vacancy-popup__text"></p>
+          <div class="vacancy-inputs">
+            <input
+              class="vacancy-input-name"
+              type="text"
+              placeholder="Ваше имя"
+            />
+            <input
+              class="vacancy-input-phone"
+              type="text"
+              placeholder="Ваш телефон"
+            />
+          </div>
+          <button class="cancel-vacancy-popup close-popup-button">
+            Отмена
+          </button>
+          <button class="send-vacancy-popup">Отправить</button>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-menu-wrapper">
+      <div class="mobile-menu">
+        <img src="/logo-new.svg" width="40" alt="" />
+        <nav>
+          <ul>
+            <li><a href="#">Преимущества</a></li>
+            <li><a href="#">Вакансии</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Связаться</a></li>
+          </ul>
+        </nav>
+        <div class="close-menu-button">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
