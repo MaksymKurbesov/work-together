@@ -1,6 +1,9 @@
 import { VACANCIES } from "./VACANCIES";
 import { generateVacancyList } from "./generateVacancies";
-import { handleListenerOnButtons } from "./vacanciesHandlers";
+import {
+  handleListenerOnButtons,
+  handleRequestVacancy,
+} from "./vacanciesHandlers";
 import $ from "jquery";
 
 export let FILTER_STATE = {
@@ -86,6 +89,7 @@ filters.forEach((filter) =>
         const html = generateVacancyList(data);
         $(".pagination ul").html(html);
         handleListenerOnButtons();
+        handleRequestVacancy();
       },
     });
   })
