@@ -1,5 +1,6 @@
 import { VACANCIES } from "./VACANCIES";
 import { generateVacancyList } from "./generateVacancies";
+import $ from "jquery";
 
 export interface IVacancy {
   image: string;

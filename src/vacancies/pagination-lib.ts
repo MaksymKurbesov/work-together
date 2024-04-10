@@ -8,6 +8,9 @@
  * Copyright 2014-2100, superRaytin
  * Released under the MIT license.
 */
+
+import $ from "jquery";
+
 !(function (n, u) {
   void 0 === u && l("Pagination requires jQuery.");
   var r = "pagination",
@@ -769,4 +772,4 @@
       define(function () {
         return u;
       });
-})(this, window.jQuery);
+})(this, $);

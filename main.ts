@@ -14,6 +14,7 @@ import "./src/ts/animations/workForYou";
 import "./src/ts/animations/withUs";
 import "./src/ts/mobileMenu";
 import "./src/ts/sendRequestToTelegram";
+import "./src/vacancies/pagination-lib";
 
 import PhotoSwipeLightbox from "photoswipe/lightbox";
 import "photoswipe/style.css";

@@ -28,7 +28,7 @@ export const handleListenerOnButtons = () => {
   });
 };
 
-handleListenerOnButtons();
+// handleListenerOnButtons();
 
 export const handleRequestVacancy = () => {
   const vacancyPopup = new PopupController(

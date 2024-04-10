@@ -1,6 +1,7 @@
 import { VACANCIES } from "./VACANCIES";
 import { generateVacancyList } from "./generateVacancies";
 import { handleListenerOnButtons } from "./vacanciesHandlers";
+import $ from "jquery";
 
 export let FILTER_STATE = {
   country: [],
