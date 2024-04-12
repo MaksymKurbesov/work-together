@@ -8,6 +8,7 @@ import NTFlag from "/flags/NT.svg";
 import CZFlag from "/flags/CZ.svg";
 import PLFlag from "/flags/PL.svg";
 import HGFlag from "/flags/HG.svg";
+import LTFlag from "/flags/LT.svg";
 
 const FLAG_MAP = {
   Англия: UKFlag,
@@ -20,6 +21,7 @@ const FLAG_MAP = {
   Чехия: CZFlag,
   Польша: PLFlag,
   Венгрия: HGFlag,
+  Литва: LTFlag,
 };
 
 export const generateVacancyList = (vacancies) => {
