@@ -10,6 +10,8 @@ const sendRequestFromPopup = async () => {
   const phone = document.querySelector(".input-phone");
   const sendButton = document.querySelector(".send-popup");
 
+  if (name.value === "") return;
+
   updateButtonState(sendButton, "loading");
   await sendRequestToTelegram({ name: name.value, phone: phone.value });
   name.value = "";
@@ -21,6 +23,8 @@ const sendRequestFromVacancy = async (vacancy) => {
   const name = document.querySelector(".vacancy-input-name");
   const phone = document.querySelector(".vacancy-input-phone");
   const sendButton = document.querySelector(".send-vacancy-popup");
+
+  if (name.value === "") return;
 
   updateButtonState(sendButton, "loading");
   await sendRequestToTelegram({
@@ -36,6 +40,8 @@ const sendRequestFromVacancy = async (vacancy) => {
 const sendRequestFromBanner = async () => {
   const name = document.querySelector(".input-name-banner");
   const phone = document.querySelector(".input-phone-banner");
+
+  if (name.value === "") return;
 
   await sendRequestToTelegram({ name: name.value, phone: phone.value });
 
