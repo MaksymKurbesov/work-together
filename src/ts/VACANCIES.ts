@@ -5,6 +5,36 @@ import {
   PackerImage,
   ChineseRestaurant,
   HotelMaids,
+  DeliveryCourier,
+  RoofingCarpenter,
+  Driver,
+  CruiseMaid,
+  Glovo,
+  MedicalDriver,
+  Fish,
+  Plasterer,
+  Greenhouse,
+  Kinder,
+  PackerReebok,
+  Greenhouse2,
+  Vegetables,
+  Parkplaza,
+  Nike,
+  CocaCola,
+  Zara,
+  Flowers,
+  Adidas,
+  Philips,
+  Tess,
+  Cook,
+  Eyelash,
+  Builder,
+  Waiter,
+  CarMechanic,
+  Painter,
+  Riveter,
+  Glass,
+  Pistachaos,
 } from "./VACANCIES_IMAGE";
 export const VACANCIES = [
   {
@@ -16,7 +46,7 @@ export const VACANCIES = [
     languageSkill: "Без знания языка",
     house: "Бесплатно",
     employment: "Частичная",
-    image: PackerImage,
+    image: DeliveryCourier,
   },
   {
     name: "Кровельщик-плотник",
@@ -27,7 +57,7 @@ export const VACANCIES = [
     languageSkill: "Без знания языка",
     house: "300€ / месяц",
     employment: "Частичная",
-    image: ChineseRestaurant,
+    image: RoofingCarpenter,
   },
   {
     name: "Водитель кат. В",
@@ -38,7 +68,7 @@ export const VACANCIES = [
     languageSkill: "Без знания языка",
     house: "Бесплатно",
     employment: "Частичная",
-    image: ChineseRestaurant,
+    image: Driver,
   },
   {
     name: "Горничная круизного лайнера",
@@ -49,7 +79,7 @@ export const VACANCIES = [
     languageSkill: "Без знания языка",
     house: "Бесплатно",
     employment: "Частичная",
-    image: ChineseRestaurant,
+    image: CruiseMaid,
   },
   {
     name: "Курьер Glovo",
@@ -60,7 +90,7 @@ export const VACANCIES = [
     languageSkill: "Без знания языка",
     house: "Бесплатно",
     employment: "Полная",
-    image: PackerImage,
+    image: Glovo,
   },
   {
     name: "Водители категории 'B' на доставку медикаментов 'Trans-o-flex'",
@@ -71,7 +101,7 @@ export const VACANCIES = [
     languageSkill: "Без знания языка",
     house: "Бесплатно",
     employment: "Полная",
-    image: ChineseRestaurant,
+    image: MedicalDriver,
   },
   {
     name: "BABORD SEAFOOD AS Переработка рыбы",
@@ -82,7 +112,7 @@ export const VACANCIES = [
     languageSkill: "Без знания языка",
     house: "300€ / месяц",
     employment: "Полная",
-    image: MushroomFarm,
+    image: Fish,
   },
   {
     name: "Штукатур-1",
@@ -93,7 +123,7 @@ export const VACANCIES = [
     languageSkill: "Без знания языка",
     house: "300€ / месяц",
     employment: "Полная",
-    image: ChineseRestaurant,
+    image: Plasterer,
   },
   {
     name: "Работа в теплицах в Лондоне",
@@ -104,7 +134,7 @@ export const VACANCIES = [
     languageSkill: "Без знания языка",
     house: "Бесплатно",
     employment: "Частичная",
-    image: PackerImage,
+    image: Greenhouse,
   },
   {
     name: "Работа на складе KINDER",
@@ -115,7 +145,7 @@ export const VACANCIES = [
     languageSkill: "Без знания языка",
     house: "Бесплатно",
     employment: "Полная",
-    image: ChineseRestaurant,
+    image: Kinder,
   },
   {
     name: "Упаковщики на склад магазина Reebok",
@@ -126,7 +156,7 @@ export const VACANCIES = [
     languageSkill: "Без знания языка",
     house: "Бесплатно",
     employment: "Частичная",
-    image: MushroomFarm,
+    image: PackerReebok,
   },
   {
     name: "Разнорабочий в теплицы в Ливерпуле",
@@ -137,7 +167,7 @@ export const VACANCIES = [
     languageSkill: "Без знания языка",
     house: "Бесплатно",
     employment: "Полная",
-    image: PackerImage,
+    image: Greenhouse2,
   },
   {
     name: "Разнорабочий на грибную ферму",
@@ -148,7 +178,7 @@ export const VACANCIES = [
     languageSkill: "Без знания языка",
     house: "400€ / месяц",
     employment: "Полная",
-    image: ChineseRestaurant,
+    image: MushroomFarm,
   },
   {
     name: "Сбор и упаковка овощей на складе",
@@ -159,7 +189,7 @@ export const VACANCIES = [
     languageSkill: "Без знания языка",
     house: "350€ / месяц",
     employment: "Полная",
-    image: PackerImage,
+    image: Vegetables,
   },
   {
     name: "Разнорабочий в Отель Park Plaza County Hall",
@@ -170,10 +200,10 @@ export const VACANCIES = [
     languageSkill: "Без знания языка",
     house: "Бесплатно",
     employment: "Полная",
-    image: ChineseRestaurant,
+    image: Parkplaza,
   },
   {
-    name: "Упаковщик на склад Магазина Nike",
+    name: "Упаковщик на склад магазина Nike",
     salary: "3400-3700€",
     country: "Англия",
     category: "Разнорабочий",
@@ -181,7 +211,7 @@ export const VACANCIES = [
     languageSkill: "Без знания языка",
     house: "300€ / месяц",
     employment: "Частичная",
-    image: ChineseRestaurant,
+    image: Nike,
   },
   {
     name: "Работник на производстве Coca-Cola",
@@ -192,7 +222,7 @@ export const VACANCIES = [
     languageSkill: "Без знания языка",
     house: "400€ / месяц",
     employment: "Полная",
-    image: ChineseRestaurant,
+    image: CocaCola,
   },
   {
     name: "Упаковщик на склад магазина Zara",
@@ -203,7 +233,7 @@ export const VACANCIES = [
     languageSkill: "Без знания языка",
     house: "230€ / месяц",
     employment: "Частичная",
-    image: MushroomFarm,
+    image: Zara,
   },
   {
     name: "Рабочие на склад цветов Pijnacker",
@@ -214,7 +244,7 @@ export const VACANCIES = [
     languageSkill: "Без знания языка",
     house: "Бесплатно",
     employment: "Полная",
-    image: ChineseRestaurant,
+    image: Flowers,
   },
   {
     name: "Рабочие на склад магазина Adidas",
@@ -225,7 +255,7 @@ export const VACANCIES = [
     languageSkill: "Без знания языка",
     house: "250€ / месяц",
     employment: "Полная",
-    image: MushroomFarm,
+    image: Adidas,
   },
   {
     name: "Рабочие на склад Philips в Амстердаме",
@@ -236,7 +266,7 @@ export const VACANCIES = [
     languageSkill: "Без знания языка",
     house: "250€ / месяц",
     employment: "Частичная",
-    image: PackerImage,
+    image: Philips,
   },
   {
     name: "Упаковщики на склад чая компании Tess",
@@ -247,6 +277,7 @@ export const VACANCIES = [
     languageSkill: "Без знания языка",
     house: "250€ / месяц",
     employment: "Полная",
+    image: Tess,
   },
   {
     name: "Повар в сеть отелей или ресторанов",
@@ -257,6 +288,7 @@ export const VACANCIES = [
     languageSkill: "Без знания языка",
     house: "Бесплатно",
     employment: "Частичная",
+    image: Cook,
   },
   {
     name: "Мастер наращивания ресниц",
@@ -267,6 +299,7 @@ export const VACANCIES = [
     languageSkill: "Без знания языка",
     house: "250€ / месяц",
     employment: "Полная",
+    image: Eyelash,
   },
   {
     name: "Строитель на внутренние работы в Гааге",
@@ -277,6 +310,7 @@ export const VACANCIES = [
     languageSkill: "Без знания языка",
     house: "350€ / месяц",
     employment: "Полная",
+    image: Builder,
   },
   {
     name: "Официант в сеть ресторанов De Leuf",
@@ -287,6 +321,7 @@ export const VACANCIES = [
     languageSkill: "Без знания языка",
     house: "250€ / месяц",
     employment: "Частичная",
+    image: Waiter,
   },
   {
     name: "Автомеханик в СТО",
@@ -297,6 +332,7 @@ export const VACANCIES = [
     languageSkill: "Без знания языка",
     house: "450€ / месяц",
     employment: "Полная",
+    image: CarMechanic,
   },
   {
     name: "Маляр с опытом работы",
@@ -307,6 +343,7 @@ export const VACANCIES = [
     languageSkill: "Без знания языка",
     house: "Бесплатно",
     employment: "Полная",
+    image: Painter,
   },
   {
     name: "Кузовщик/Рихтовщик/Маляр",
@@ -317,6 +354,7 @@ export const VACANCIES = [
     languageSkill: "Без знания языка",
     house: "350€ / месяц",
     employment: "Частичная",
+    image: Riveter,
   },
   {
     name: "Сортировщик стеклотары",
@@ -327,6 +365,7 @@ export const VACANCIES = [
     languageSkill: "Без знания языка",
     house: "Бесплатно",
     employment: "Полная",
+    image: Glass,
   },
   {
     name: "Упаковка фисташек на складе",
@@ -337,6 +376,7 @@ export const VACANCIES = [
     languageSkill: "Без знания языка",
     house: "Бесплатно",
     employment: "Полная",
+    image: Pistachaos,
   },
   {
     name: "Упаковщик промтоваров на складе",
@@ -347,6 +387,7 @@ export const VACANCIES = [
     languageSkill: "Без знания языка",
     house: "Бесплатно",
     employment: "Частичная",
+    image: PackerImage,
   },
   {
     name: "Разнорабочий в сети китайских ресторанов",
@@ -417,6 +458,7 @@ export const VACANCIES = [
     languageSkill: "Без знания языка",
     house: "Бесплатно",
     employment: "Полная",
+    image: Adidas,
   },
   {
     name: "Продуктовый склад-супермаркет ROHLIK",
@@ -457,6 +499,7 @@ export const VACANCIES = [
     languageSkill: "Без знания языка",
     house: "Бесплатно",
     employment: "Частичная",
+    image: Cook,
   },
   {
     name: "Работники в отель 'Harmony Bay Hotel'",
@@ -527,6 +570,7 @@ export const VACANCIES = [
     languageSkill: "Без знания языка",
     house: "Бесплатно",
     employment: "Частичная",
+    image: HotelMaids,
   },
   {
     name: "Работа на стройке, установка фасада",
@@ -537,6 +581,7 @@ export const VACANCIES = [
     languageSkill: "Без знания языка",
     house: "Бесплатно",
     employment: "Полная",
+    image: Builder,
   },
   {
     name: "Водитель вилочного автопогрузчика",
@@ -547,6 +592,7 @@ export const VACANCIES = [
     languageSkill: "Без знания языка",
     house: "120€ / месяц",
     employment: "Частичная",
+    image: Driver,
   },
   {
     name: "Работа на складе 'ACTION'",
